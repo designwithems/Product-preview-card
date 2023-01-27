@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+div, img, button {
+  display: block;
+}
+
+img, button {
+  max-width: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  text-align: none;
+  color: inherit;
+  border: none;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1;
+}
+
+p, span {
+  font-weight: 500;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 600px;
+  height: 98vh;
+  transition: all 0.5s ease-in-out;
+}
+
+article > * {
+  width: 50%;
+}
+
+article {
+  display: flex;
+  background-color: hsl(0deg, 0%, 100%);
+  overflow: auto;
+  border-radius: 10px;
+}
+article:hover {
+  box-shadow: 10px 10px 5px hsl(228deg, 12%, 48%);
+  transition: all 0.9s ease-in-out;
+}
+
+article .product__content {
+  padding: 1.875rem;
+}
+
+article .product__content .product__category {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+article .product__content .product__title {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: hsl(212deg, 21%, 14%);
+  letter-spacing: 0;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.dg {
+  color: hsl(228deg, 12%, 48%);
+}
+
+.m-t20 {
+  margin-top: 20px;
+}
+
+.product__price {
+  color: hsl(158deg, 36%, 37%);
+  padding-right: 1.25rem;
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.product__original-price {
+  font-weight: 500;
+  vertical-align: super;
+  font-size: 0.9rem;
+  width: auto;
+}
+
+.hr:hover {
+  color: red;
+}
+
+article .product__content .product_description {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 15px 0;
+  background-color: hsl(158deg, 36%, 37%);
+  width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(157deg, 37%, 25%);
+  transition: all 0.5s ease-in;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button img {
+  padding-right: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  main {
+    max-width: 21.4375rem;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  article > * {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  main {
+    max-width: 16rem;
+  }
+}/*# sourceMappingURL=style.css.map */
